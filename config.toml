@@ -12,7 +12,7 @@ relativeURLs = true
 hrefTargetBlank = true
 
 [params]
-editURL = "https://github.com/aws-samples/cont-net-ws-staging/edit/master/content/"
+editURL = "https://github.com/paavan98pm/cont-net-ws-staging/edit/master/content/"
 themeVariant = "mine"
 showVisitedLinks = false
 author = "Paavan Mistry"
@@ -22,7 +22,7 @@ disableAssetsBusting = false
 disableLanguageSwitchingButton = true
 disableShortcutsTitle=false
 disableInlineCopyToClipBoard = true
-ghrepo = "https://github.com/aws-samples/cont-net-ws-stating/"
+ghrepo = "https://github.com/paavan98pm/cont-net-ws-staging/"
 branch = "master"
 template_bucket = "awsk8snetworkshops.com"
 pygmentsUseClasses = true
