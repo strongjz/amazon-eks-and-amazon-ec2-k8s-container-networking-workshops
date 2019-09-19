@@ -16,30 +16,20 @@ On Linux:
 From wherever you checkout repos:
 `git clone git@github.com:aws-samples/containernetworkshop.git` (or your fork)
 
-#### Clone the theme submodule:
-`cd containernetworkshop`
 
-`git submodule init` ;
-`git submodule update`
-
-#### Install Node.js and npm:
-You can follow instructions from npm website: https://www.npmjs.com/get-npm
-
-#### Install node packages:
-`npm install`
-
-#### Run Hugo locally:
-`npm run server`
-or
-`npm run drafts` to see stubbed in draft pages.
-
-`npm run build` will build your content locally and output to `./public/`
-
-`npm run test` will test the built content for bad links
-
-#### View Hugo locally:
-Visit http://localhost:8080/ to see the site.
-
+#### Local Build
+To build the content
+ * The project uses [hugo learn](https://github.com/matcornic/hugo-theme-learn/) template as a git submodule. To update the content, execute the following code
+```bash
+pushd themes/learn
+git submodule init
+git submodule update --checkout --recursive
+popd
+```
+ * Run hugo to generate the site, and point your browser to http://localhost:1313
+```bash
+hugo serve -D
+```
 #### Making Edits:
 As you save edits to a page, the site will live-reload to show your changes.
 
