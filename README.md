@@ -3,7 +3,7 @@
 ### Setup:
 
 #### Install Hugo:
-On a mac:
+On a Mac:
 
 `brew install hugo`
 
