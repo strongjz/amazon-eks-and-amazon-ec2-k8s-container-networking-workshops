@@ -1,5 +1,10 @@
+master branch: ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiUmYrQzlvK2JVYWloK3N5NFh5WUZNS1duYUtVeFN2eWJLNk9VdU9NdzdDdGtobldPcHBKYjdVQ0YxV0NQLzRZeXhWbkJVTkc2Ymd2TEpJblNYb1BraXFNPSIsIml2UGFyYW1ldGVyU3BlYyI6IjRObVVDcVUyb3JJUEFYQTciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
-# Amazon EKS Container Networking Workshop 
+jenkinsworld branch: ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiUmYrQzlvK2JVYWloK3N5NFh5WUZNS1duYUtVeFN2eWJLNk9VdU9NdzdDdGtobldPcHBKYjdVQ0YxV0NQLzRZeXhWbkJVTkc2Ymd2TEpJblNYb1BraXFNPSIsIml2UGFyYW1ldGVyU3BlYyI6IjRObVVDcVUyb3JJUEFYQTciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=jenkinsworld)
+
+tigera branch: ![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiUmYrQzlvK2JVYWloK3N5NFh5WUZNS1duYUtVeFN2eWJLNk9VdU9NdzdDdGtobldPcHBKYjdVQ0YxV0NQLzRZeXhWbkJVTkc2Ymd2TEpJblNYb1BraXFNPSIsIml2UGFyYW1ldGVyU3BlYyI6IjRObVVDcVUyb3JJUEFYQTciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=tigera)
+
+# eksworkshop
 
 ### Setup:
 
@@ -14,10 +19,10 @@ On Linux:
 
 #### Clone this repo:
 From wherever you checkout repos:
-`git clone git@github.com:aws-samples/containernetworkshop.git` (or your fork)
+`git clone git@github.com:aws-samples/eks-workshop.git` (or your fork)
 
 #### Clone the theme submodule:
-`cd containernetworkshop`
+`cd eks-workshop`
 
 `git submodule init` ;
 `git submodule update`
@@ -49,6 +54,7 @@ deployed hash at the bottom of the menu panel.
 
 Any commits to a branch will auto build and deploy in a couple of minutes to a custom route named with the branch name. You can see the currently
 deployed hash at the bottom of the menu panel.
+An example is the "jenkinsworld" branch would be deployed to https://eksworkshop.com/jenkinsworld/
 
 note: shift-reload may be necessary in your browser to reflect the latest changes.
 
