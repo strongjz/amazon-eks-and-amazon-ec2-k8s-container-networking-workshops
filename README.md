@@ -18,7 +18,7 @@ From wherever you checkout repos:
 #### Clone the theme submodule:
 `cd cont-net-ws-staging`
 
-``bash
+```bash
 pushd themes/learn
 git submodule init
 git submodule update --checkout --recursive
