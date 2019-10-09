@@ -10,5 +10,3 @@ weight: 25
 the experience of creating EKS clusters.
 
 In this module, we will use eksctl to launch and configure our EKS cluster and nodes.
-
-{{< youtube 3-OZqA5p1HA >}}
