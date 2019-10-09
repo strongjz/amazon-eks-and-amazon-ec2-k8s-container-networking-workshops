@@ -8,6 +8,6 @@ weight: 20
 
 In this module, we will use the Cloud9 environment to understand the basics of container networking on a host. This will help us with fundamental understanding of some basic networking requirements in a Kubernetes cluster.
 
-
+![Container Networking](../images/podnetworking.png)
 
 
