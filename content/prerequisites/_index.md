@@ -1,5 +1,5 @@
 ---
-title: "Start the workshop..."
+title: "Prerequisites"
 chapter: true
 weight: 10
 ---

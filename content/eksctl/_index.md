@@ -1,7 +1,7 @@
 ---
-title: "Launch using eksctl"
+title: "Module 2: Create cluster using eksctl"
 chapter: true
-weight: 20
+weight: 25
 ---
 
 # Launch using [eksctl](https://eksctl.io/)

@@ -26,10 +26,3 @@ sudo chmod +x /usr/local/bin/kubectl
 sudo yum -y install jq gettext
 ```
 
-#### Verify the binaries are in the path and executable
-```
-for command in kubectl jq envsubst
-  do
-    which $command &>/dev/null && echo "$command in path" || echo "$command NOT FOUND"
-  done
-```
