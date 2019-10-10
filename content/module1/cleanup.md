@@ -1,6 +1,6 @@
 ---
 title: "4. Clean up"
-chapter: true
+chapter: false
 weight: 25
 ---
 

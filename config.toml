@@ -54,12 +54,12 @@ weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/aws-samples/eks-workshop"
+url = "https://github.com/paavan98pm/cont-net-ws-staging/"
 weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Have questions?"
-url = "mailto:eksworkshop@amazon.com"
+url = "mailto:paavan@amazon.com"
 weight = 40
 
 

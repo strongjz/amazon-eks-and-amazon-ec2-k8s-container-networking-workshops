@@ -6,7 +6,7 @@ weight: 14
 
 
 {{% notice info %}}
-Before you deploy the CloudFormation template, feel free to view it <a href="https://github.com/paavan98pm/cont-net-ws-staging/blob/master/static/yaml/cloud9.yaml" target="_blank">here</a href>."
+Before you deploy the CloudFormation template, feel free to view it <a href="https://github.com/paavan98pm/cont-net-ws-staging/blob/master/static/yaml/cloud9.yaml" target="_blank">here</a href>.
 {{% /notice %}}
 
 <!---

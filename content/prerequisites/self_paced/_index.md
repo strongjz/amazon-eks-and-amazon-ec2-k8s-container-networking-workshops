@@ -1,6 +1,8 @@
 ---
 title: "...on your own"
-chapter: true
+disableToc: true
+chapter: false
+hidden: true
 weight: 11
 ---
 

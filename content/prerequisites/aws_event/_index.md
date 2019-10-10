@@ -1,6 +1,8 @@
 ---
 title: "...at an AWS event"
-chapter: true
+chapter: false
+disableToc: true
+hidden: true
 weight: 12
 ---
 
@@ -9,9 +11,7 @@ weight: 12
 {{% notice warning %}}
 Only complete this section if you are at an AWS hosted event (such as re:Invent,
 Kubecon, Immersion Day, or any other event hosted by an AWS employee). If you 
-are running the workshop on your own, go to:
-
-[Start the workshop on your own](../self_paced/).
+are running the workshop on your own, go to [start the workshop on your own](../self_paced/).
 {{% /notice %}}
 
 {{% children %}}
