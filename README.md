@@ -13,7 +13,7 @@ On Linux:
 
 #### Clone this repo:
 From wherever you checkout repos:
-`git clone https://github.com/paavan98pm/cont-net-ws-staging.git`
+`git clone https://github.com/aws-samples/amazon-eks-and-amazon-ec2-k8s-container-networking-workshops`
 
 #### Clone the theme submodule:
 `cd cont-net-ws-staging`
