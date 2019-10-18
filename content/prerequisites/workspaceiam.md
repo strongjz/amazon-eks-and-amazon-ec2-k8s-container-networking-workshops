@@ -68,7 +68,7 @@ If the _Arn_ contains the role name from above and an Instance ID, you may proce
 
 #### INVALID
 
-If the _Arn contains `TeamRole`, `MasterRole`, or does not match the role name output above, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
+If the _Arn_ contains `TeamRole`, `MasterRole`, or does not match the role name output above, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
 
 ```output
 {
