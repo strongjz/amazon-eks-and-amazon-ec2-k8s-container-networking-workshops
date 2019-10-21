@@ -16,7 +16,7 @@ ip link set lo up
 ip link set c<replaceitwithCPID> name eth0 up
 ```
 
-3. Assign IP address of 172.17.42.3/16 to our `eth0` interface and set default gateway to 172.17.0.1
+3. Assign IP address of 172.17.42.3 /16 to our `eth0` interface and set default gateway to 172.17.0.1
 
 ```
 ip addr add 172.17.42.3/16 dev eth0
