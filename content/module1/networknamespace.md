@@ -16,12 +16,14 @@ weight: 17
 The `unshare` command unshares the indicated namespace(s) from the parent process and then executes the specified program. The namespaces to be unshared are indicated via options. Unshareable namespaces are `mount`, `UTS`, `IPC`, `network`, `pid`, and `user`.
 Read more at: [https://www.commandlinux.com/man-page/man1/unshare.1.html](https://www.commandlinux.com/man-page/man1/unshare.1.html)
 {{% /notice %}}
+
 1. Check docker and network status
 ```
 sudo bash
 service docker status
 ifconfig -a
 ```
+
 2. Use `unshare` to create a mini-container with a separate network namespace
 
 ```
