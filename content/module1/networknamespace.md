@@ -12,12 +12,10 @@ weight: 17
 
 
 #### Create a network namespace in Terminal 1 (Container) using `unshare`
-{{%expand "Expand here to understand `unshare`" %}}
+{{% notice info %}}
 The `unshare` command unshares the indicated namespace(s) from the parent process and then executes the specified program. The namespaces to be unshared are indicated via options. Unshareable namespaces are `mount`, `UTS`, `IPC`, `network`, `pid`, and `user`.
-
 Read more at: [https://www.commandlinux.com/man-page/man1/unshare.1.html](https://www.commandlinux.com/man-page/man1/unshare.1.html)
-{{% /expand %}}
-
+{{% /notice %}}
 1. Check docker and network status
 ```
 sudo bash
