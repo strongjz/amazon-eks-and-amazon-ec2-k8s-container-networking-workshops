@@ -13,14 +13,14 @@ weight: 20
 **How do I check the IAM role on the workspace?**
 
 {{%expand "Expand here to see the solution" %}}
-Run `aws sts get-caller-identity` and validate that your _Arn_ contains `eksworkshop-admin` or `TeamRole`
+Run `aws sts get-caller-identity` and validate that your _Arn_ contains `networkshop-admin` or `TeamRole`
 (or the role created when starting the workshop) and an Instance Id.
 
 ```output
 {
     "Account": "123456789012",
     "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef",
-    "Arn": "arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef"
+    "Arn": "arn:aws:sts::123456789012:assumed-role/networkshop-admin/i-01234567890abcdef"
 }
 or
 {
@@ -37,7 +37,7 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 
 ### Create an EKS cluster
 ```
-eksctl create cluster --name=eksworkshop-eksctl --nodes=2 --region=${AWS_REGION} --ssh-public-key=networkshop
+eksctl create cluster --name=networkshop-eksctl --nodes=2 --region=${AWS_REGION} --ssh-public-key=networkshop
 ```
 
 {{% notice info %}}
