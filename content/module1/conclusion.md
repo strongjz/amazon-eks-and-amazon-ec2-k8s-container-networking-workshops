@@ -1,7 +1,8 @@
 ---
-title: "4. Module conclusion"
+title: "Module conclusion"
 chapter: false
 weight: 24
+pre: "<b>4. </b>"
 ---
 
 ### What we accomplished
@@ -14,5 +15,3 @@ weight: 24
 Using this knowledge, we will create an Amazon EKS cluster in the next module ([Module 2](/eksctl)) to understand Amazon EKS Cluster Networking in [Module 3](/module3)
 
 ![Container Networking](../../images/podnetworking.png)
-
-

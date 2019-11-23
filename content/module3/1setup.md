@@ -1,7 +1,8 @@
 ---
-title: "1. Cluster information from Cloud9"
+title: "Cluster information from Cloud9"
 chapter: false
 weight: 21
+pre: "<b>1. </b>"
 ---
 
 
@@ -37,4 +38,4 @@ kubectl get node -o wide
 aws ec2 describe-network-interfaces --network-interface-ids <insert_ENI_IDs> --region <region>
 ```
 
-6. 
+6.

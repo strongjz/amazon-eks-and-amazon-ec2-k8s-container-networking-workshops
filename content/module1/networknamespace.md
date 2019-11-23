@@ -1,7 +1,8 @@
 ---
-title: "1. Create a network namespace in Cloud9 host"
+title: "Create a network namespace in Cloud9 host"
 chapter: false
 weight: 17
+pre: "<b>1. </b>"
 ---
 
 #### Introduction

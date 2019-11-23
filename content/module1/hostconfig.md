@@ -1,7 +1,8 @@
 ---
-title: "2. Configure host network"
+title: "Configure host network"
 chapter: false
 weight: 18
+pre: "<b>2. </b>"
 ---
 
 #### Configure host network in Terminal 2 (Host)
@@ -33,4 +34,3 @@ ifconfig -a
 ```
 ip link set h$CPID master docker0 up
 ```
-

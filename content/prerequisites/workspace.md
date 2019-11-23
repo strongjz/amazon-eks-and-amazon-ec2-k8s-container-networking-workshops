@@ -1,12 +1,13 @@
 ---
 title: "Cloud9 workspace"
 chapter: false
-weight: 14
+weight: 5
+draft: false
 ---
 
 
 {{% notice info %}}
-Before you deploy the CloudFormation template, feel free to view it <a href="https://github.com/paavan98pm/cont-net-ws-staging/blob/master/static/yaml/cloud9.yaml" target="_blank">here</a href>.
+Before you deploy the CloudFormation template, feel free to view it <a href="https://github.com/aws-samples/amazon-eks-and-amazon-ec2-k8s-container-networking-workshops/blob/master/templates/awsk8snetworking-cluster-mgmt-cloud9.yaml" target="_blank">here</a href>.
 {{% /notice %}}
 
 <!---

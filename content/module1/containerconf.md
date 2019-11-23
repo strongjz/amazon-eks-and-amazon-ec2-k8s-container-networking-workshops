@@ -1,7 +1,8 @@
 ---
-title: "3. Configure container network"
+title: "Configure container network"
 chapter: false
 weight: 20
+pre: "<b>3. </b>"
 ---
 
 #### Configure host network in Terminal 1 (Container)
@@ -29,4 +30,3 @@ ip route add default via 172.17.0.1
 ifconfig -a
 ping amazon.com
 ```
-

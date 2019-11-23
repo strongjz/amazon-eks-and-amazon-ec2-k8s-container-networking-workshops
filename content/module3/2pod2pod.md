@@ -1,7 +1,8 @@
 ---
-title: "2. Pod configuration and networking"
+title: "Pod configuration and networking"
 chapter: false
 weight: 22
+pre: "<b>2. </b>"
 ---
 
 
