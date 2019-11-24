@@ -10,7 +10,7 @@ Cloud9 normally manages IAM credentials dynamically. This isn't currently compat
 the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
 {{% /notice %}}
 
-- Return to your workspace and click the sprocket, or launch a new tab to open the Preferences tab
+- Return to your [cloud9 workspace](https://eu-west-1.console.aws.amazon.com/cloud9/home#) and click the sprocket, or launch a new tab to open the Preferences tab
 - Select **AWS SETTINGS**
 - Turn off **AWS managed temporary credentials**
 - Close the Preferences tab
@@ -22,9 +22,14 @@ any existing credentials file:
 rm -vf ${HOME}/.aws/credentials
 ```
 
+Install JQ and envsubst:
+```
+sudo yum -y install jq gettext
+```
+
 We should configure our aws cli with our current region as default:
 ```
-export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
+export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
 
 echo "export ACCOUNT_ID=${ACCOUNT_ID}" >> ~/.bash_profile
@@ -52,7 +57,7 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 
 The output assumed-role name should contain:
 ```
-eksworkshop-admin
+amazonk8snetworkshop-admin
 ```
 
 #### VALID
@@ -62,8 +67,8 @@ If the _Arn_ contains the role name from above and an Instance ID, you may proce
 ```output
 {
     "Account": "123456789012",
-    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef",
-    "Arn": "arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef"
+    "UserId": "AROAYD7CFQJWZSIEXYJCC:i-0668085e67f9144a1",
+    "Arn": "arn:aws:sts::123456789012:assumed-role/amazonk8snetworkshop-admin/i-0668085e67f9144a1"
 }
 ```
 

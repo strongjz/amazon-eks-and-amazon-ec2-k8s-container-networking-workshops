@@ -24,7 +24,7 @@ rm -vf ${HOME}/.aws/credentials
 
 We should configure our aws cli with our current region as default:
 ```
-export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
+export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
 export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
 
 echo "export ACCOUNT_ID=${ACCOUNT_ID}" >> ~/.bash_profile
@@ -52,7 +52,7 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 
 The output assumed-role name should contain:
 ```
-eksworkshop-admin
+amazonk8snetworkshop-admin
 ```
 
 #### VALID
@@ -62,8 +62,8 @@ If the _Arn_ contains the role name from above and an Instance ID, you may proce
 ```output
 {
     "Account": "123456789012",
-    "UserId": "AROA1SAMPLEAWSIAMROLE:i-01234567890abcdef",
-    "Arn": "arn:aws:sts::123456789012:assumed-role/eksworkshop-admin/i-01234567890abcdef"
+    "UserId": "AROAYD7CFQJWZSIEXYJCC:i-083b109f48f561637",
+    "Arn": "arn:aws:sts::123456789012:assumed-role/amazonk8snetworkshop-admin/i-083b109f48f561637"
 }
 ```
 

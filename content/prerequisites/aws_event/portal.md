@@ -25,4 +25,4 @@ weight: 20
 
 
 
-Once you have completed the step above, you can head straight to [**Create a Workspace**](/prerequisites/workspace/)
+Once you have completed the step above, you can head straight to [**Create a Workspace**](/prerequisites/createworkspace/)

@@ -1,13 +1,13 @@
 ---
-title: "Cloud9 workspace"
-chapter: false
+title: "Create Cloud9 Workspace"
+date: 2019-11-23T22:33:47-08:00
 weight: 5
+pre: "<b>1. </b>"
 draft: false
 ---
 
-
 {{% notice info %}}
-Before you deploy the CloudFormation template, feel free to view it <a href="https://github.com/aws-samples/amazon-eks-and-amazon-ec2-k8s-container-networking-workshops/blob/master/templates/awsk8snetworking-cluster-mgmt-cloud9.yaml" target="_blank">here</a href>.
+Before you deploy the CloudFormation template, feel free to view it [here](https://github.com/aws-samples/amazon-eks-and-amazon-ec2-k8s-container-networking-workshops/blob/master/templates/awsk8snetworking-cluster-mgmt-cloud9.yaml)
 {{% /notice %}}
 
 <!---
@@ -33,8 +33,9 @@ Cloud9 requires third-party-cookies. You can whitelist the [specific domains]( h
 
 
 - Customize the environment by closing the **welcome tab**
-and **lower work area**, and opening a new **terminal** tab in the main work area:
-![c9before](/images/c9before.png)
+and **lower work area**: and opening a new **terminal** tab in the main work area:
+![c9before](/images/cloud9before.png)
+![c9newterminal](/images/cloud9newterminal.png)
 
 - Your workspace should now look like this:
-![c9after](/images/c9after.png)
+![c9after](/images/cloud9after.png)

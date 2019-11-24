@@ -1,7 +1,7 @@
 ---
 title: "Prerequisites"
 chapter: true
-weight: 10
+weight: 5
 pre: "<b>0. </b>"
 ---
 
@@ -15,4 +15,4 @@ Follow one of the following depending on whether you are...
 {{< /tabs >}}
 
 
-Once you have completed with either setup, continue with [**Create a Workspace**](/prerequisites/workspace/)
+Once you have completed with either setup, continue with [**Create a Workspace**](/prerequisites/createworkspace/)

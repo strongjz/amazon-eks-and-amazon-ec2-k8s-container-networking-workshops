@@ -25,7 +25,7 @@ wget https://github.com/kubernetes/kops/releases/download/1.10.0/kops-linux-amd6
 
 chmod +x kops-linux-amd64
 
-mv kops-linux-amd64 /usr/local/bin/kops
+sudo mv kops-linux-amd64 /usr/local/bin/kops
 ```
 
 #### Install JQ and envsubst:

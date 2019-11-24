@@ -1,7 +1,8 @@
 ---
 title: "Kops Cluster"
 date: 2019-11-22T15:27:04-08:00
-weight: 13
+weight: 15
+pre: "<b>3. </b>"
 draft: false
 ---
 
