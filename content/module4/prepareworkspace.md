@@ -10,51 +10,52 @@ draft: false
 Before you begin, verify you are on:**[k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime)**
 {{% /notice %}}
 
-# Configure [k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime) to create Kops cluster:
+### Configure [k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime) to create Kops cluster:
 
-#### Create .kube for kops configuration
+1. **Create .kube for kops configuration**
 ```
 mkdir -p $HOME/.kube
 ```
-#### Create /home/ec2-user/kops folder to store kops related artifacts
+2. **Create $HOME/kopsCluster folder to store kops related artifacts**
 ```
 mkdir -p $HOME/kopsCluster
 ```
 
-#### Export instance IAM role:
+3. **Export Cloud9 Workspace's role, ID and AMI ID to $HOME/.bash_profile:**
 ```
 echo "export AWS_INSTANCE_IAM_ROLE=$(curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/)" >> $HOME/.bash_profile
-```
 
-#### Export AWS instance id and ami id:
-```
 echo "export AWS_INSTANCE_ID=$(ec2-metadata  |grep instance-id | awk -F': ' '{print $2}')" >> $HOME/.bash_profile
+
 echo "export AMI_ID=$(curl -s http://169.254.169.254/latest/meta-data/ami-id)" >> $HOME/.bash_profile
 ```
 
-#### Export KUBECONFIG variable used for storing kops cluster configuration:
+4. **Export KUBECONFIG variable used for storing kops cluster configuration to $HOME/.bash_profile:**
 ```
 echo "export KUBECONFIG=$HOME/.kube/config" >> $HOME/.bash_profile
 ```
-#### Source .bash_profile:
+
+5. **Source $HOME/.bash_profile so that we can use the exported variables:**
 ```
 source $HOME/.bash_profile
 ```
-#### Export kops cluster state:
+
+6. **Export kops cluster state to $HOME/.bash_profile:**
 ```
 echo "export KOPS_STATE_STORE=s3://amazon-kops-cluster-state-${AWS_ACCOUNT_ID}-${AWS_REGION}" >> $HOME/.bash_profile
 ```
-#### Source .bash_profile:
+7. **Source $HOME/.bash_profile update KOPS_STATE_STORE:**
 ```
 source $HOME/.bash_profile
 ```
-#### Create Amazon S3 bucket:
-* Amazon S3 bucket is used for storing kops cluster state:
-* Note: Amazon S3 requires --create-bucket-configuration LocationConstraint=<region> for regions other than us-east-1:
+
+8. **Create Amazon S3 bucket:**
+  * Amazon S3 bucket is used for storing kops cluster state:
+  * Note: Amazon S3 requires --create-bucket-configuration LocationConstraint=<region> for regions other than us-east-1:
 ```
 aws s3api create-bucket --bucket amazon-kops-cluster-state-${AWS_ACCOUNT_ID}-${AWS_REGION} --region ${AWS_REGION} --create-bucket-configuration LocationConstraint=${AWS_REGION}
 ```
-* Note: it is strongly recommend versioning your S3 bucket in case you ever need to revert or recover a previous state store:
+  * Note: it is strongly recommend versioning your S3 bucket in case you ever need to revert or recover a previous state store:
 ```
 aws s3api put-bucket-versioning --bucket amazon-kops-cluster-state-${AWS_ACCOUNT_ID}-${AWS_REGION} --versioning-configuration Status=Enabled
 ```
