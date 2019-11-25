@@ -1,8 +1,8 @@
 ---
-title: "Kops Cluster Information"
+title: "Kops k8s cluster information"
 date: 2019-11-22T16:54:52-08:00
-weight: 22
-pre: "<b>3. </b>"
+weight: 21
+pre: "<b>2. </b>"
 draft: false
 ---
 

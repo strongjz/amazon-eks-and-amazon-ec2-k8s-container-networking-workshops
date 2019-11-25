@@ -1,0 +1,23 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: kops-busybox
+  labels:
+    app: kops-busybox
+spec:
+  replicas: 2 # tells deployment to run 3 pods matching the template
+  selector:
+    matchLabels:
+      app: kops-busybox
+  template:
+    metadata:
+      labels:
+        app: kops-busybox
+    spec:
+      containers:
+      - name: kops-busybox
+        image: busybox
+        command:
+          - sleep
+          - "3600"
+        imagePullPolicy: IfNotPresent

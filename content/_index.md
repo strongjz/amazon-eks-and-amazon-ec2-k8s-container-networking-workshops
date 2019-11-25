@@ -4,7 +4,7 @@ chapter: true
 weight: 1
 ---
 
-<div style="text-align: center"><h2>NET403: Amazon EKS and Kuberntes on EC2 Container Networking Workshop</h2></div>
+<div style="text-align: center"><h2>NET403: Amazon EKS and Kubernetes on EC2 Container Networking Workshop</h2></div>
 
 ![EKS](images/3-service-animated.gif)
 

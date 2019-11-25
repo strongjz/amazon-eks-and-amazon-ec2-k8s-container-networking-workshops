@@ -1,8 +1,8 @@
 ---
-title: "Create Kubernetes Cluster using Kops"
+title: "Create kubernetes cluster using kops"
 date: 2019-11-22T16:54:52-08:00
-weight: 21
-pre: "<b>2. </b>"
+weight: 20
+pre: "<b>1. </b>"
 draft: false
 ---
 

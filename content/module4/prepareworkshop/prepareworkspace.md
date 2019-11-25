@@ -1,5 +1,5 @@
 ---
-title: "Prepare Workspace"
+title: "Prepare workspace"
 date: 2019-11-22T16:54:52-08:00
 weight: 20
 pre: "<b>1. </b>"
@@ -13,11 +13,11 @@ For this module, you should be on: **k8s-kops-mgmt-cloud9-instance**
 #### Launch Cloud9 console in the recommended region and open cloud9 IDE for k8s-kops-mgmt-cloud9-instance:
 
 {{< tabs name="Region" >}}
-{{{< tab name="Virginia" include="cloud9-us-east-1.md" />}}
-{{{< tab name="Oregon" include="cloud9-us-west-2.md" />}}
-{{{< tab name="Ireland" include="cloud9-eu-west-1.md" />}}
-{{{< tab name="Ohio" include="cloud9-us-east-2.md" />}}
-{{{< tab name="Singapore" include="cloud9-ap-southeast-1.md" />}}
+{{{< tab name="Virginia" include="../cloud9-us-east-1.md" />}}
+{{{< tab name="Oregon" include="../cloud9-us-west-2.md" />}}
+{{{< tab name="Ireland" include="../cloud9-eu-west-1.md" />}}
+{{{< tab name="Ohio" include="../cloud9-us-east-2.md" />}}
+{{{< tab name="Singapore" include="../cloud9-ap-southeast-1.md" />}}
 {{< /tabs >}}
 
 ### Configure [k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime) to create Kops cluster:
@@ -68,6 +68,11 @@ aws s3api create-bucket --bucket amazon-kops-cluster-state-${AWS_ACCOUNT_ID}-${A
   * Note: it is strongly recommend versioning your S3 bucket in case you ever need to revert or recover a previous state store:
 ```
 aws s3api put-bucket-versioning --bucket amazon-kops-cluster-state-${AWS_ACCOUNT_ID}-${AWS_REGION} --versioning-configuration Status=Enabled
+```
+
+9. **Copy configuration files to $HOME/kopsConfigFiles/:**
+```
+aws s3 sync s3://net410-workshop-us-west-2/kopsConfigFiles/ $HOME/kopsConfigFiles/
 ```
 
 <!--
