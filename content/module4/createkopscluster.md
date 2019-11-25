@@ -6,10 +6,6 @@ pre: "<b>2. </b>"
 draft: false
 ---
 
-{{% notice warning %}}
-Before you begin, verify you are on:**[k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime)**
-{{% /notice %}}
-
 ### Create cluster:
 
 **1. Create a cluster:**

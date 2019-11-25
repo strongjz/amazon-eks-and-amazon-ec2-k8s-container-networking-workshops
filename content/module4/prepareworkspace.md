@@ -7,8 +7,18 @@ draft: false
 ---
 
 {{% notice warning %}}
-Before you begin, verify you are on:**[k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime)**
+For this module, you should be on: **k8s-kops-mgmt-cloud9-instance**
 {{% /notice %}}
+
+#### Launch Cloud9 console in the recommended region and open cloud9 IDE for k8s-kops-mgmt-cloud9-instance:
+
+{{< tabs name="Region" >}}
+{{{< tab name="Virginia" include="cloud9-us-east-1.md" />}}
+{{{< tab name="Oregon" include="cloud9-us-west-2.md" />}}
+{{{< tab name="Ireland" include="cloud9-eu-west-1.md" />}}
+{{{< tab name="Ohio" include="cloud9-us-east-2.md" />}}
+{{{< tab name="Singapore" include="cloud9-ap-southeast-1.md" />}}
+{{< /tabs >}}
 
 ### Configure [k8s-kops-mgmt-cloud9-instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime) to create Kops cluster:
 
