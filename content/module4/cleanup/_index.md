@@ -13,10 +13,6 @@ draft: false
 ```
 kops delete cluster kops-cluster.k8s.local --yes
 ```
-```
-Expected output:
-
-```
 
 * Verify cluster was deleted:
 ```
@@ -25,4 +21,8 @@ kops get cluster
 ```
 Expected output:
 
+ec2-user:~/environment $ kops get cluster
+
+no clusters found
+ec2-user:~/environment $
 ```

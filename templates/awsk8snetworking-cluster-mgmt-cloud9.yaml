@@ -53,6 +53,38 @@ Resources:
     Properties:
       SubnetId: !Ref PubSub
       RouteTableId: !Ref PublicRouteTable
+  Cloud9InstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Path: /
+      RoleName: "amazonk8snetworkshop-admin"
+  Cloud9InstancePolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: Cloud9AdminAccessPolicy
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action: '*'
+            Resource: '*'
+      Roles:
+        - !Ref Cloud9InstanceRole
+  Cloud9InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      InstanceProfileName: "amazonk8snetworkshop-admin"
+      Path: /
+      Roles:
+        - !Ref Cloud9InstanceRole
+
   KopsCloud9Ide:
     DependsOn: AttachInternetGateway
     Type: "AWS::Cloud9::EnvironmentEC2"

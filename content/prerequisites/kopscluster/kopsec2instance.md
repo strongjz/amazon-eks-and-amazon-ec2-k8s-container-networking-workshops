@@ -1,5 +1,5 @@
 ---
-title: "Attach the IAM role to your kops Workspace"
+title: "Attach IAM role to your kops Workspace"
 chapter: false
 weight: 15
 pre: "<b>1. </b>"
@@ -16,8 +16,8 @@ The IAM user/role to create the Kubernetes cluster using Kops must have the foll
 
 We have already created a new IAM role, let's attach newly created IAM role to your kops workspace:
 
-1. Follow [this deep link to find your Cloud9 EC2 instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;sort=desc:launchTime)
+1. Follow [this deep link to find your Cloud9 EC2 instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=k8s-kops-mgmt-cloud9-instance;instanceState=running,stopped;sort=desc:launchTime)
 1. Select the instance, then choose **Actions / Instance Settings / Attach/Replace IAM Role**
 ![c9instancerole](/images/cloud9kopsinstancerole.png)
-1. Choose **eksworkshop-admin** from the **IAM Role** drop down, and select **Apply**
+1. Choose **amazonk8snetworkshop-admin** from the **IAM Role** drop down, and select **Apply**
 ![c9attachrole](/images/cloud9kopsattachrole.png)
