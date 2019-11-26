@@ -8,8 +8,7 @@ pre: "<b>3. </b>"
 ## Objectives:
 
 * Examine major components of AWS VPC routed CNI and demonstrate how it handles traffic for:
-	* Pod to Pod communication
-	* Pod to Service communication
+  * Pod to Pod communication
 * Examine  the communication channels between Amazon EKS Kubernetes Control Plane and Customer worker nodes.
 
 ## Overview

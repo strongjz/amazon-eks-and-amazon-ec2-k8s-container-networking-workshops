@@ -84,7 +84,6 @@ Resources:
       Path: /
       Roles:
         - !Ref Cloud9InstanceRole
-
   KopsCloud9Ide:
     DependsOn: AttachInternetGateway
     Type: "AWS::Cloud9::EnvironmentEC2"
