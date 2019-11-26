@@ -7,9 +7,10 @@ pre: "<b>3. </b>"
 
 #### Configure host network in Terminal 1 (Container)
 
-1. Ensure you're in Terminal 1 - the container terminal and bring up the loopback interface
+1. Ensure you're in Terminal 1 - the container terminal and bring up the loopback interface. List the interfaces.
 ```
 ip link set lo up
+ifconfig -a
 ```
 2. Rename the `c` interface to `eth0`
 
