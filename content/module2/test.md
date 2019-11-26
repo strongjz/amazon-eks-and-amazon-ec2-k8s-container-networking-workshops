@@ -8,7 +8,7 @@ pre: "<b>3. </b>"
 Confirm your Nodes:
 
 ```bash
-kubectl get nodes # if we see our 3 nodes, we know we have authenticated correctly
+kubectl get nodes -o wide # if we see our 2 nodes, we know we have authenticated correctly
 ```
 
 Export the Worker Role Name for use throughout the workshop
