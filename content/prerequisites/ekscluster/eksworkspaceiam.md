@@ -22,6 +22,11 @@ any existing credentials file:
 rm -vf ${HOME}/.aws/credentials
 ```
 
+#### Install JQ
+```
+sudo yum -y install jq
+```
+
 We should configure our aws cli with our current region as default:
 ```
 export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
