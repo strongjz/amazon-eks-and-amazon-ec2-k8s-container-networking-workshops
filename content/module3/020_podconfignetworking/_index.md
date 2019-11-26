@@ -166,11 +166,10 @@ lo        Link encap:Local Loopback
 /go #
 
 ec2-user:~/environment $
-
+```
 {{% notice info %}}
 A Quick look at the Node (filtering on instance-id) in EC2 Console will show the Secondary IP addresses allocated to the Node
 {{% /notice %}}
-```
 
 * Exploring Interface used for Pod Default RouteTable
 ```
