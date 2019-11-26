@@ -38,9 +38,11 @@ If you do see the correct role, proceed to next step to create an EKS cluster.
 
 ### Create an EKS cluster
 ```
-eksctl create cluster --name=networkshop-eksctl --nodes=2 --region=${AWS_REGION} --ssh-public-key=networkshop
+eksctl create cluster --name=networkshop-eksctl --nodes=2 --region=${AWS_REGION} --ssh-public-key=eksnetworkshop
 ```
 
 {{% notice info %}}
-Launching EKS and all the dependencies will take approximately 15-20 minutes
+Launching EKS and all the dependencies will take approximately 15-20 minutes.
+
+Note that we use the ssh key created in [Prerequisites Section 0.2.4](/prerequisites/ekscluster/ekssshkey/)
 {{% /notice %}}
