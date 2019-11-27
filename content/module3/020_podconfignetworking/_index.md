@@ -6,7 +6,7 @@ draft: false
 pre: "<b>2. </b>"
 ---
 
-* Verification that no pods are currently running
+1. Verification that no pods are currently running
 ```
 kubectl get pod -o wide
 ```
@@ -18,12 +18,12 @@ No resources found.
 ec2-user:~/environment $
 ```
 
-* **Copy configuration files to $HOME/eksConfigFiles/:**
+2. **Copy configuration files to $HOME/eksConfigFiles/:**
 ```
 aws s3 sync s3://net410-workshop-us-west-2/eksConfigFiles/ $HOME/eksConfigFiles/
 ```
 
-* Create Pods on Nodes
+3. Create Pods on Nodes
 ```
 kubectl apply -f $HOME/eksConfigFiles/worker_hello.yaml
 ```
@@ -35,7 +35,7 @@ ec2-user:~/environment $ kubectl apply -f $HOME/eksConfigFiles/worker_hello.yaml
 ec2-user:~/environment $
 ```
 
-* Pod Creation Verification
+4. Pod Creation Verification
 ```
 kubectl get pod -o wide
 ```
@@ -62,7 +62,7 @@ worker-hello-5bfdf775d7-zgc72   1/1     Running   0          20s   192.168.79.52
 ec2-user:~/environment $
 ```
 
-* Pod to Pod Communication (Intra Node)
+5. Pod to Pod Communication (Intra Node)
 {{% notice info %}}
 Connect into a Pod using information above and ping another Pod with the same node name e.g. "ip-192-168-9-39.us-west-2.compute.internal":**
 {{% /notice %}}
@@ -88,7 +88,7 @@ PING 192.168.17.79 (192.168.17.79): 56 data bytes
 ec2-user:~/environment $
 ```
 
-* Pod to Pod Communication (Inter Node)
+6. Pod to Pod Communication (Inter Node)
 ```
 kubectl apply -f $HOME/eksConfigFiles/worker_hello.yaml
 ```
@@ -109,7 +109,7 @@ round-trip min/avg/max = 0.574/0.587/0.605 ms
 ec2-user:~/environment $
 ```
 
-* Pod to External Communication
+7. Pod to External Communication
 ```
 kubectl exec -ti worker-hello-5bfdf775d7-46f2g sh
 
@@ -133,7 +133,7 @@ round-trip min/avg/max = 8.925/8.968/9.008 ms
 ec2-user:~/environment $
 ```
 
-* Exploring Pod IP
+8. Exploring Pod IP
 
 {{% notice info %}}
 You still need to be in the pod ssh session
@@ -171,7 +171,7 @@ ec2-user:~/environment $
 A Quick look at the Node (filtering on instance-id) in EC2 Console will show the Secondary IP addresses allocated to the Node
 {{% /notice %}}
 
-* Exploring Interface used for Pod Default RouteTable
+9. Exploring Interface used for Pod Default RouteTable
 ```
 kubectl apply -f $HOME/eksConfigFiles/worker_hello.yaml
 ```

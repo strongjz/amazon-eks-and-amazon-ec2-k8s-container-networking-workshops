@@ -10,7 +10,8 @@ draft: false
 * kubenet is basic and does not many features
 * When running kubenet in AWS, you are limited to 50 EC2 instances
   * Route tables are used to configure network traffic between kubernetes node
-  * Limited to 50 entries per VPC **--> need to verify this limit**
+  * Limited to 50 entries per VPC
+  * Please visit [Amazon VPC Limits](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html) for latest information on limits.
 * Cluster cannot be set up in a public-private topology in VPC
   * Public-Private topology uses multiple route tables, kubenet uses only one route table
 * Other more advanced features, such as BGP, egress control, and mesh networking, are only available with different CNI providers.

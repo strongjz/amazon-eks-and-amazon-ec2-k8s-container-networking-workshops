@@ -3,15 +3,15 @@ title: "Cluster network with application deployed"
 date: 2019-11-24T11:51:22-08:00
 weight: 21
 pre: "<b>2. </b>"
-draft: true
+draft: false
 ---
 
 ### In this activity we walk through cluster network details with an application deployed across the cluster:
 
-* Check worker node networking details after deploying application:
-  * Should be on the **worker node** for this:
-  * Access worker node, you can use already opened ssh connection to the worker node or you can open a new connection
-  * Worker node public ip address can be found in the output of 'kubectl get nodes -o wide' command
+1. Check worker node networking details after deploying application:
+  1. Should be on the **worker node** for this:
+  2. Access worker node, you can use already opened ssh connection to the worker node or you can open a new connection
+  3. Worker node public ip address can be found in the output of 'kubectl get nodes -o wide' command
 ```
 kubectl get nodes -o wide
 ```
@@ -44,7 +44,7 @@ Last login: Mon Nov 25 03:24:03 2019 from 3.248.205.69
 admin@ip-10-0-113-206:~$
 ```
 
-* You should see **vethxx** interface for busybox pod added to cbr0 bridge. Use appropriate **device name**
+2. You should see **vethxx** interface for busybox pod added to cbr0 bridge. Use appropriate **device name**
 ```
 ip addr show | grep veth
 ```
@@ -79,7 +79,7 @@ admin@ip-10-0-113-206:~$
 
 ### Pod details:
 
-* For this activity you need to access pod's command line shell. Let's retrieve pod details. You should be on **k8s-kops-mgmt-cloud9-instance**:
+1. For this activity you need to access pod's command line shell. Let's retrieve pod details. You should be on **k8s-kops-mgmt-cloud9-instance**:
 
 ```
 kubectl get pods -o wide
@@ -94,10 +94,10 @@ kops-busybox-55cd99b769-s5chn   1/1     Running   2          2h    100.96.1.5   
 ec2-user:~/environment $
 ```
 
-* Access one of the pod from the output:
-  * Access it from k8s-kops-mgmt-cloud9-instance terminal
-  * Executing this command will drop you into pod's command line shell (terminal)
-  * Use appropriate pod name
+2. Access one of the pod from the output:
+  1. Access it from k8s-kops-mgmt-cloud9-instance terminal
+  2. Executing this command will drop you into pod's command line shell (terminal)
+  3. Use appropriate pod name
 
 ```
 kubectl exec -ti kops-busybox-55cd99b769-rlgp9 sh
@@ -113,7 +113,7 @@ ec2-user:~/environment $ kubectl exec -ti kops-busybox-55cd99b769-rlgp9 sh
 Below commands are run from within the pod, you need to be on one of the pods
 {{% /notice %}}
 
-* View pod interface and ip address details:
+3. View pod interface and ip address details:
 ```
 ip addr show
 ```
@@ -136,7 +136,7 @@ Expected output:
 / #
 ```
 
-* View pod's arp table:
+4. View pod's arp table:
 ```
 arp -a
 ```
@@ -147,7 +147,7 @@ Expected output:
 / #
 ```
 
-- View pod's route table:
+5. View pod's route table:
 ```
 ip route show
 ```

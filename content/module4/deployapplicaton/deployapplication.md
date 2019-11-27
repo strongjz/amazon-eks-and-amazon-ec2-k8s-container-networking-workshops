@@ -3,7 +3,7 @@ title: "Deploy application"
 date: 2019-11-24T11:51:22-08:00
 weight: 20
 pre: "<b>1. </b>"
-draft: true
+draft: false
 ---
 
 ### In this activity we will deploy an application across the cluster:

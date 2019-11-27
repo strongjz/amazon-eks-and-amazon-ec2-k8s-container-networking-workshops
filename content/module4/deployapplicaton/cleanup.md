@@ -3,7 +3,7 @@ title: "Cleanup"
 date: 2019-11-24T11:51:22-08:00
 weight: 22
 pre: "<b>3. </b>"
-draft: true
+draft: false
 ---
 
 ### In this activity we will perform the clean up by deleting busybox deployment:

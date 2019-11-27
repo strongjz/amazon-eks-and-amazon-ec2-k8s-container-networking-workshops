@@ -6,7 +6,7 @@ draft: false
 pre: "<b>1. </b>"
 ---
 
-* Deployed Cluster Verification:
+1. Deployed Cluster Verification:
 ```
 aws eks list-clusters
 ```
@@ -22,7 +22,7 @@ ec2-user:~/environment $ aws eks list-clusters
 ec2-user:~/environment $
 ```
 
-* Detailed Cluster Information Verification:
+2. Detailed Cluster Information Verification:
 ```
 aws eks describe-cluster --name <insertclustername>
 ```
@@ -85,7 +85,7 @@ ec2-user:~/environment $
 
 ```
 
-* Cluster Information for Master and DNS Server (CoreDNS) Endpoints Verification:
+3. Cluster Information for Master and DNS Server (CoreDNS) Endpoints Verification:
 ```
 kubectl cluster-info
 ```
@@ -100,7 +100,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ec2-user:~/environment $
 ```
 
-* Cross Account ENI Information Verification:
+4. Cross Account ENI Information Verification:
 ```
 aws ec2 describe-network-interfaces --network-interface-ids <insert_ENI_IDs> --region <region>
 ```
