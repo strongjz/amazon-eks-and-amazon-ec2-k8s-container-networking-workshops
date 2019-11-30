@@ -53,7 +53,7 @@ ec2-user:~/environment $ aws eks describe-cluster --name networkshop-eksctl
         "certificateAuthority": {
             "data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRFNU1URXlOREEyTURRd05sb1hEVEk1TVRFeU1UQTJNRFF3Tmxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGRCCmo0cGhDczZQYWVJazRlay9TRlJzSGtIcnltUk1uWk1YTEtzODh5enlqd25BNW1ET0RONjd3aUZEKzVkeDd5UFkKQ2pkNXE5Y3ZoeUpKWmNEanZsSG50WjBoNXhlaTZEMU9FZWpHM3drNDJWeGtOSURJcmJsNUNVdFp5dUdMUit3ZQpSZ1dyMkhBRHcvMm5Jc3hOcTF2bUEvTjA3YkRvS0xNWURGN0ZHVHVuN2NMcFlYRUVaUVFyYjAzdXdxYzFJVFZSClZ3em5XRm82Vk9uN3B2K2dyWnppcXVnanZnaVdKd0xlTlRCcGVSU3h6SHZRRHhWTnpZeUZDeTdOTE1iUlMrUHMKOStsQUlnbzVSR2x0cVlhZ3FyWXFteU1NeDhIdHhyOGROcWdnYUtOZHVyQ2JGSkpJYldnS3liVUVVUk5DK3VnZQpyY1U0VTZBcTZzQ0J1dEhmUWhzQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFJU0hlZ3NMeTRYMFpSREoyKy91aGExb3hJUUcKblcrbDdpaTlJSUhZRUp3SVpneE9JR3VCQUwvTzRGUGhqZEFsbGRFYWhiZGNrNmJiYy9DbUFJUjRTUTk3Y0dTbwpCYk1Pam1TQ2VmS1NHU0xCdzVRQ0pFREtHemdLOEpMRDRPSnZNQk1TT0VZMTFpUmZFOGtuYm9IcitXWWh2eE9iCi9wbTMwRWh2NE5Pc1h4bGh3RU5BS016UjJmdWJ0RVY2eGxKWTl4b2FFSHJUQ21QcjBpd1pvMUozWERma3A2TmEKUVE0eWQ0NVlUWThndWJVaWdCY2gxQVNUR2NzV0E0elRQbUgvTjlyM25aMmIxM2pOWk9wTzJxYjlMWEdiVXhkNAo2NVpVUEU1UVAyZUdZVjNZeVZDeUQyZDdJL1VXei92MFNoanBEQlNFU0Z4My9US1lJZWJkdWFDc05KUT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
         },
-        "roleArn": "arn:aws:iam::497378160285:role/eksctl-networkshop-eksctl-cluster-ServiceRole-1K0Z94UFDWU68",
+        "roleArn": "arn:aws:iam::123456789012:role/eksctl-networkshop-eksctl-cluster-ServiceRole-1K0Z94UFDWU68",
         "resourcesVpcConfig": {
             "subnetIds": [
                 "subnet-073d3d88dd38a84fb",
@@ -72,7 +72,7 @@ ec2-user:~/environment $ aws eks describe-cluster --name networkshop-eksctl
         },
         "platformVersion": "eks.3",
         "version": "1.14",
-        "arn": "arn:aws:eks:us-west-2:497378160285:cluster/networkshop-eksctl",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/networkshop-eksctl",
         "identity": {
             "oidc": {
                 "issuer": "https://oidc.eks.us-west-2.amazonaws.com/id/3409E1492A3BD874836B70CE96BB14EF"
@@ -148,7 +148,7 @@ ec2-user:~/environment $ aws ec2 describe-network-interfaces --network-interface
                 }
             ],
             "Ipv6Addresses": [],
-            "OwnerId": "497378160285",
+            "OwnerId": "123456789012",
             "SubnetId": "subnet-02be14bbc3ab73b7b",
             "TagSet": [],
             "PrivateIpAddress": "192.168.171.7"

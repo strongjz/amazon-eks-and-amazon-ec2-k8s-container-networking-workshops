@@ -16,7 +16,7 @@ draft: false
 * For this workshop we will deploy busybox application using a configuration file.
   * Configuration files are located on your Cloud9 workspace instance under **$HOME/kopsConfigFiles/**
 
-* We have not created any deployment, so you will not find any resources:
+1. We have not created any deployment, so you will not find any resources:
 ```
 kubectl get deployment
 ```
@@ -28,7 +28,7 @@ No resources found.
 ec2-user:~/environment $
 ```
 
-* Create busyboxy deployment:
+2. Create busyboxy deployment:
 ```
 kubectl create -f $HOME/kopsConfigFiles/busyboxDeployment.yaml
 ```
@@ -40,7 +40,7 @@ deployment.apps/kops-busybox created
 ec2-user:~/environment $
 ```
 
-* You should be able to see busybox deployment:
+3. You should be able to see busybox deployment:
 ```
 kubectl get deployment -o wide
 kubectl get replicasets
@@ -59,7 +59,7 @@ kops-busybox-55cd99b769   2         2         2       1m
 ec2-user:~/environment $
 ```
 
-* It will create **two pods**, one on each worker node:
+4. It will create **two pods**, one on each worker node:
 ```
 kubectl get pods -n default -o wide
 ```

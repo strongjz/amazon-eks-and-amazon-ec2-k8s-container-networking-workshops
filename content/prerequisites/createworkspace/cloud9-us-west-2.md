@@ -5,4 +5,4 @@ disableToc: true
 hidden: true
 ---
 
-[Cloud9 console in us-west-2](https://us-west-2.console.aws.amazon.com/cloud9/)
+<center>**[<span style="color:orange">Cloud9 Console in us-west-2</span>](https://us-west-2.console.aws.amazon.com/cloud9/)**</center>

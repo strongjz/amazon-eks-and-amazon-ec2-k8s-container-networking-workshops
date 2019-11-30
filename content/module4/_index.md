@@ -27,10 +27,6 @@ For this module, you should be on: **k8s-kops-mgmt-cloud9-instance**
 
 #### Launch Cloud9 console in the recommended region and open cloud9 IDE for k8s-kops-mgmt-cloud9-instance:
 
-{{< tabs name="Region" >}}
-{{{< tab name="Virginia" include="cloud9-us-east-1.md" />}}
+{{< tabs name="Cloud9RegionSpecificConsole" >}}
 {{{< tab name="Oregon" include="cloud9-us-west-2.md" />}}
-{{{< tab name="Ireland" include="cloud9-eu-west-1.md" />}}
-{{{< tab name="Ohio" include="cloud9-us-east-2.md" />}}
-{{{< tab name="Singapore" include="cloud9-ap-southeast-1.md" />}}
 {{< /tabs >}}

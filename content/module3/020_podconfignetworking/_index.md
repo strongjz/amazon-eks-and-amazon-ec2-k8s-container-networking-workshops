@@ -90,7 +90,9 @@ ec2-user:~/environment $
 
 6. Pod to Pod Communication (Inter Node)
 ```
-kubectl apply -f $HOME/eksConfigFiles/worker_hello.yaml
+kubectl exec -ti worker-hello-5bfdf775d7-46f2g sh
+
+ping 192.168.77.124
 ```
 ```
 Expected output:
@@ -173,7 +175,7 @@ A Quick look at the Node (filtering on instance-id) in EC2 Console will show the
 
 9. Exploring Interface used for Pod Default RouteTable
 ```
-kubectl apply -f $HOME/eksConfigFiles/worker_hello.yaml
+ip route
 ```
 ```
 Expected output:

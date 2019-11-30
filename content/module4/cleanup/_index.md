@@ -8,13 +8,13 @@ draft: false
 
 ### We have completed kops activity, let's delete the kops cluster:
 
-* Delete kops cluster:
+1. Delete kops cluster:
 
 ```
 kops delete cluster kops-cluster.k8s.local --yes
 ```
 
-* Verify cluster was deleted:
+2. Verify cluster was deleted:
 ```
 kops get cluster
 ```

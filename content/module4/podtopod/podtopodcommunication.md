@@ -12,7 +12,7 @@ draft: false
 You should be on **k8s-kops-mgmt-cloud9-instance:**
 {{% /notice %}}
 
-* Create server pods:
+1. Create server pods:
 ```
 kubectl create -f $HOME/kopsConfigFiles/simpleHttpServer.yaml
 ```
@@ -24,7 +24,7 @@ deployment.extensions/simple-http-server created
 ec2-user:~/environment $
 ```
 
-* Verify the deployment:
+2. Verify the deployment:
 ```
 kubectl get pods
 ```
@@ -38,7 +38,7 @@ simple-http-server-575788d6cd-ft9wn   1/1     Running   0          53s
 ec2-user:~/environment $
 ```
 
-* Get **simple-http-server** pod ip address:
+3. Get **simple-http-server** pod ip address:
 ```
 kubectl get pods --selector=app=simple-http-server-pod -o jsonpath='{.items[*].status.podIP}'; echo
 ```
@@ -50,7 +50,7 @@ ec2-user:~/environment $ kubectl get pods --selector=app=simple-http-server-pod 
 ec2-user:~/environment $
 ```
 
-* Create a client pod that communicate with server pod:
+4. Create a client pod that communicate with server pod:
 ```
 kubectl create -f $HOME/kopsConfigFiles/client.yaml
 ```
@@ -62,7 +62,7 @@ deployment.apps/simple-client created
 ec2-user:~/environment $
 ```
 
-* Connect to client pod, install curl and access the server:
+5. Connect to client pod, install curl and access the server:
 * Get pod details from the output of 'kubectl get pods' command
 ```
 kubectl get pods --selector=app=simple-client-pod
@@ -75,7 +75,7 @@ NAME                            READY   STATUS    RESTARTS   AGE
 simple-client-8878d486d-zl2dl   1/1     Running   0          3m
 ec2-user:~/environment $
 ```
-* Access the pod.
+6. Access the pod.
 * Executing this command will drop you into pod's command line shell (terminal)
 * Use appropriate pod name.
 ```
@@ -92,7 +92,7 @@ ec2-user:~/environment $ kubectl exec -ti simple-client-8878d486d-zl2dl sh
 Below commands are run from within the pod, you need to be on one of the pods
 {{% /notice %}}
 
-* add curl
+7. add curl
 ```
 apk add curl
 ```
@@ -112,7 +112,7 @@ OK: 7 MiB in 18 packages
 / #
 ```
 
-* Access server pod, use appropriate IP from above. You can use
+8. Access server pod, use appropriate IP from above. You can use
 ```
 curl 100.96.1.6:8080
 curl 100.96.2.5:8080
