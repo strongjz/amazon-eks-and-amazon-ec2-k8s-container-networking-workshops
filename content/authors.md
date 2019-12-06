@@ -9,4 +9,4 @@ disableToc: true
 note: change the url to match the new repo... using old repo as an example placeholder
 --->
 
-{{% ghcontributors "https://api.github.com/repos/paavan98pm/cont-net-ws-staging/contributors" %}}
+{{% ghcontributors "https://api.github.com/repos/aws-samples/amazon-eks-and-amazon-ec2-k8s-container-networking-workshops/contributors" %}}
