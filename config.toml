@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 title = "Amazon EKS Container Networking Workshop"
 theme = "learn"
 uglyurls = false
-googleAnalytics = "UA-44634850-4"
+googleAnalytics = "G-FYRMX7C6FN"
 sectionPagesMenu = "main"
 relativeURLs = true
 
