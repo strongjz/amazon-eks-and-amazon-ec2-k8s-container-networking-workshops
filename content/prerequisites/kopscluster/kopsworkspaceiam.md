@@ -10,7 +10,7 @@ Cloud9 normally manages IAM credentials dynamically. This isn't currently compat
 the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
 {{% /notice %}}
 
-- Return to your [cloud9 workspace](https://eu-west-1.console.aws.amazon.com/cloud9/home#) and click the sprocket, or launch a new tab to open the Preferences tab
+- Return to your [cloud9 workspace](https://us-west-2.console.aws.amazon.com/cloud9/home#) and click the sprocket, or launch a new tab to open the Preferences tab
 - Select **AWS SETTINGS**
 - Turn off **AWS managed temporary credentials**
 - Close the Preferences tab
