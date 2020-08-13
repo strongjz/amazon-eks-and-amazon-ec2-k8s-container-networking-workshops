@@ -1,5 +1,5 @@
 +++
-title = "Module 4: Kops Cluster Networking"
+title = "Module 4: Kops Networking"
 date = 2019-11-20T23:32:35-08:00
 weight = 35
 chapter = true
